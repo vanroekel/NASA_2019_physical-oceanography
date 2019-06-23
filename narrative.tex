@@ -154,7 +154,7 @@ We will also asses the interannual variability in the zonal advective fluxes via
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{heatbudget.eps}
+  \includegraphics[width=0.8\textwidth]{heatbudget.pdf}
   \caption{Model simulated layer temperature budgets for (left) the $2^\circ$S to $2^\circ$N band as a climatological annual mean, and (right) the cold tongue region as a 12 month climatology.  The budget extends vertical over (a),(b) the surface mixed layer and (c),(d) the advective layer.  Colors indicate the net surface heat flux minus shortwave penetrating through the layer base (red), parameterized local diffusion due to vertical mixing (green) and monthly advection (blue), all submonthly advection including subdaily advection (magenta), and the sum of all remaining terms (gray).  Vertical lines in (a) and (c) show the zonal extent of the cold tongue box.}
   \label{fig:heatBudget}
 \end{figure}
@@ -171,11 +171,31 @@ At high resolutions, it can often be difficult to analyze mode output.  Signific
 
 The ECCO and model analysis each contain a few uncertainties that could hinder progress.  As an example, TOPEX/Poseidon and other altimetry data may filter out shorter timescales, making diagnosis of CTW pathways difficult.  Analysis of other, higher frequency data sources (e.g. TAO/TRITON buoys).  Further, the analysis of model simulations allo us to explicitly control the what fields are output and their respective frequencies.  In our model analysis, development of a new mesh is not without inherent risk.  This has led us to first analyzing the newly developed mesh for the E3SM project, that has already been rigorously tested.  Finally, the new submesoscale resolving mesh, which has the most risk, can be developed in parallel to all other tasks.  Further, the tools used to generate MPAS meshes has become quite robust and easier to use recently, greatly reducing risk associated with the generation of a new mesh.
 
-\section{Team Member Roles and Work Plan}
+\section{Team Member Roles}
+
+PI Van Roekel will lead the overall project effort, arrange and hold project meetings, and ensure that all deliverables are met.  His primary expertise is in ocean turbulence through large eddy simulation across a very wide range of scales (isotropic turbulence to the mesoscales) and parameterization of vertical turbulent fluxes of heat, momentum, and salt for large scale ocean models.  Recently he has worked to understand ENSO variability in E3SM and this work has led to large reduction in tropical variability biases in the model.  Parts of this work are documented in \citep{golaz2018doe}.  He has also successfully used E3SM in an ultra high resolution configuration (submesoscale resolving), albeit in an idealized (annular) configuration.  He will also be responsible for acquiring all necessary computational resources for the project.  Van Roekel has a long track record of acquiring computational resources.  To date his work has successfully leveraged nearly 500 million cpu hours, where most hours were acquired through competitive proposals.  Note also that Los Alamos National Laboratory features a number of advanced computational platforms (detailed in Appendix~\ref{sec:facilities}).  These resources are available through a separate proposal process and can be acquired at no cost to this budget.
+
+Although Van Roekel is only listed as 10\% on the proposal, the questions we are pursing in this proposal would are important considerations for the E3SM project, but cannot be pursued as a part of that project.  Therefore another $\approx 25\%$ of Van Roekel's ()who is also the co-lead of the water cycle science campaign for E3SM) E3SM time will be leveraged as in-kind support of this project.
+
+In the first year of this proposal PI Van Roekel will hire a unnamed post doctoral researcher at LANL.  This postdoc will lead the development of the ultra high resolution mesh and conduct the simulations on Los Alamos computational resources.  Approximately 50\% of the LANL postdoc funding will come from this budget.  The other 50\% will be funded through internal LANL programs, such as the Center for Space and Earth Sciences \url{https://www.lanl.gov/projects/national-security-education-center/space-earth-center/index.php}
+
+The work at the University of Connecticut will be led primarily by Co-I Ray.  She has recently designed a novel methodology for heat budget analysis (summarized in Section~\ref{sec:heatBudget}) that has been used to develop new understanding for mechanisms governing equatorial cold tongue variability.  This is a general methodology that can be used in various regions and models.  She has demonstrated analysis expertise and will lead the analysis during the project.
+
+Finally, Co-I Siedlecki is the current mentor of Co-I Ray.  Although she is not a funded participant of the project, she has expertise in coastal physics and bogeochemistry and will continue to mentor Co-I Ray on this project and will provide her expertise in an advisory capacity to the project as a whole.
+
+\section{Timeline}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Timeline_NASA.pdf}
+\end{figure}
+
+
+\section{Management Plan}
 
 
 \begin{itemize}
-    \item LVR lead PI on project, will manage progress, get resources, etc...
+
     \item 50\% postdoc to be funded at LANL, with other 50\% coming from other sources at LANL
     \item SS - lead UConn PI will provide coastal expertise and "advise" SR on the project
     \item SR - implement heat budget code within E3SM and analyze ecco and ecco2 products.
