@@ -1,0 +1,59 @@
+%\begingroup
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{24pt plus 24pt}
+
+\subsection*{Los Alamos National Laboratory}
+
+Researchers at LANL and their collaborators have access to substantial
+state-of-the-art Institutional Computing capabilities as part of institutional
+support and ongoing funding by DOE Climate Modeling programs. 
+These resources
+come in the form of production systems that are part of LANL's
+Institutional Computing resources and additional set of testbed
+systems devoted entirely to supporting research and development
+activities.
+Current funding permits an allocation between 5-10\% of the resources below
+with additional resources available through an annual proposal-driven
+allocation. PI Van Roekel already possesses allocations on these systems and has a strong track record of acquiring resources through the open proposal call.
+
+
+The current available institutional computing systems include: 
+% from https://hpc.lanl.gov/summary_table
+\begin{center}
+  \begin{tabular}{|p{0.75in}|p{0.7in}|p{0.6in}|p{0.5in}|p{0.45in}|p{0.75in}|l|}
+  \hline 
+  \textbf{System} & \textbf{Processor Type} & \textbf{Memory (GB)} & \textbf{Cores / node} & \textbf{Node Count} & \textbf{Network} & \textbf{TFLOPS}\\
+  \hline
+  \hline 
+  Grizzly & Intel Xeon Broadwell & 128 & 36  & 1,490 & OmniPath & 1,806  \\
+  \hline
+  Badger    & Intel Xeon Broadwell & 128 & 36 & 660 & Omnipath &  798 \\
+  \hline
+  Kodiak     & Intel Broadwell / NVIDIA Tesla P100 GPGPUs & 256 & 36 & 133 & Infiniband Enhanced Data Rate   & 1850 \\
+  \hline
+  \end{tabular}
+\end{center}
+
+All of these clusters are attached to a 10PB Lustre high performance storage
+system and expandable archival storage that currently has a capacity of several
+hundred PB. A small high-memory visualization cluster is available for
+analysis.
+
+In addition to these production systems, Laboratory researchers host a number
+of small clusters and single-node systems that are used to explore Nvidia GPUs
+and Intel many-core architectures. 
+For example, one collection of testbed systems can be accessed through
+a common front-end dubbed Darwin.  This 128 node cluster is used
+to explore higher core count designs and accelerator-based computing.
+The majority of Darwin's nodes contain 48 AMD Opteron cores and either
+one or two GPUs.  Half of the nodes contain dual NVIDIA Fermi-class
+GPUs and the other half a single AMD GPU. The nodes are interconnected
+with dual Infiniband QDR interfaces.  In addition, each node contains
+both a solid state and a mechanical disk drive.  The system contains
+additional nodes that explore new processors and systems from Intel,
+AMD, NVIDIA, and ARM. 
+
+%\endgroup
+
+
+

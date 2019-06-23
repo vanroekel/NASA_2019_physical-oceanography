@@ -1,0 +1,37 @@
+%\phantomsection
+%\addtocounter{section}{1}
+%\renewcommand{\refname}{Appendix~\arabic{section}: Data Management Plan}
+%\addcontentsline{toc}{section}{\refname}
+%\section*{\refname}
+
+\section{Data Management Plan}
+\label{sec:dataplan}
+
+The plan below describes how any data generated from this project will be managed. 
+
+\subsection{Data types and sources}
+
+This project is primarily focused on analyzing presently available data.  This includes NASA data (e.g. ECCO and ECCO2) as well as model data (E3SM, and other CMIP models).  All data is publicly hosted and available for analysis.  There will be a few fields that we derive (e.g. heat budget analysis).  Any new analysis of general interest to the community will be made available on a site like zenodo.  In year three we will conduct simulations with a new ultra high resolution configuration of E3SM.  The output from these simulations will slightly smaller than the E3SM high resolution configuration output.
+
+\subsection{Content and format}
+
+Simulation data resulting from this project will be published via the Earth System Grid Federation (ESGF) in the netCDF Climate and Forecast (CF) metadata conventions. Simulation data will also include metadata on the model version and configuration used to perform the simulations. The data will include many prognostic and diagnostic climate fields on the model simulation grids.
+
+\subsection{Sharing and preservation}
+\label{sec:SharePreserv}
+
+All simulation data and any uniquely compiled observational data sets used for comparison will be made publicly available via the Earth System Grid Federation (ESGF, esgf.org) or suitable alternative, following the DOE Exascale Energy Earth System Model (E3SM) code and data sharing policy. Under this policy, data and code will be shared after at least one peer-reviewed paper describing the model or simulation has appeared in a journal. Access to data prior to the first publication (development code/data) can be arranged subject to the following restrictions:
+\begin{enumerate}
+\item All such data and code may not be redistributed. Anyone with access to the code or simulation data will take reasonable precautions to ensure the code or simulations are not accessed by unauthorized persons.
+\item All proposed research using code and associated simulations must be coordinated with and approved by the project investigators prior to starting the research. The research plan should include an upfront discussion of publications and authorship. 
+\item Ultra high resolution simulation output can only be used for the agreed upon research and may not be used for other purposes or in other models, until such time as the development code is publicly released.
+\end{enumerate}
+
+Data will be archived within ESGF and within the computing facilities where the data was generated, subject to local computing center policies and storage constraints. Availability of the data after a 3-year period will be evaluated annually to determine whether the data is still relevant (e.g. not superseded by subsequent simulations) and whether further archiving is cost effective.
+
+\subsection{Protection}
+Simulation data will include no personally identifiable information and does not involve human subjects. All simulation results are unclassified and published in the open literature. The data sharing policy that restricts access prior to a peer-reviewed publication is meant to protect intellectual property prior to such publication.
+
+\subsection{Rationale}
+
+Results generated as a part of this project may be useful to the climate science community and will therefore be preserved and shared openly to allow use by these communities after a suitable period (described above) for protecting intellectual property prior to peer-reviewed publication. Any data sets aggregated or derived from open data sources will also be shared if not already available from the data owner.

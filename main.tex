@@ -1,0 +1,136 @@
+
+%
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage[numbers,sort]{natbib}
+\usepackage{bibentry}
+%\usepackage[dvipsnames]{xcolor,colortbl}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage{amsmath,amssymb,amsthm,bm}
+\usepackage{times}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\usepackage{multirow}
+
+\usepackage[margin=1in]{geometry}
+
+\newcommand*{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}} }
+\let\oldcitep\citep
+\renewcommand{\citep}[1]{ \oldcitep{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\definecolor{LightGray}{rgb}{0.85, 0.85, 0.85}
+\newcolumntype{d}{>{\columncolor{LightGray}}c}
+\newcolumntype{D}{>{\columncolor{LightGray}}C}
+
+\usepackage{array}
+
+\usepackage{graphicx}
+\usepackage[rflt]{floatflt}
+
+% See this file for a set of pre-defined journal abbreviations
+\input{journal-abbreviations.tex} 
+
+\begin{document}
+%\include{abstract}
+\newpage
+
+\pagestyle{empty}
+\include{title_page}
+\pagestyle{plain}
+\newpage
+
+%\include{Budgets/lanl-justification}
+%\newpage
+
+\pagenumbering{roman}
+\renewcommand*\contentsname{Table of Contents}
+\tableofcontents
+
+\vfill
+\newpage
+\pagenumbering{arabic}
+
+\newpage
+
+\include{narrative}
+
+\appendix
+
+\input{references}
+\newpage
+
+\section{Biographical Sketches}
+\label{sec:cvs}
+
+Biographical Sketches are included for personnel associated with key tasks.  They are as follows
+
+\begin{itemize}
+\item Luke Van Roekel (Lead PI)
+\item Samantha Siedlecki {Instituional PI}
+\item Sulagna Ray {Co-I}
+\end{itemize}
+
+\newpage
+\nopagecolor
+\includepdf[fitpaper=true, pages=-]{bios/LPVCV.pdf}
+\newpage
+\includepdf[pages=-]{bios/sascv.pdf}
+\newpage
+\includepdf[pages=-]{bios/srcv.pdf}
+\newpage
+
+\input{personnel}
+\newpage
+
+\section{Current and Pending Support}
+\label{sec:support}
+
+\bigskip
+\noindent
+
+\bigskip
+Information on current and pending support for project participants is provided
+as follows (alphabetized per category):
+\begin{itemize}
+\item Lead PI
+\item Co-PIs
+\end{itemize}
+
+\bigskip
+Effort of all investigators will be adjusted depending on future funded
+proposals and as funding on future grants commences.
+
+\newpage
+\input{support/vanroekel}
+\newpage
+\includepdf[pages=-]{support/siedlecki_CP.pdf}
+\newpage
+\input{support/sulagna}
+\newpage
+
+\input{budgetJustification}
+\newpage
+
+\input{facilities}
+\newpage
+
+\input{detailedBudget}
+\newpage
+
+\input{dataplan}
+\newpage
+
+\end{document}
